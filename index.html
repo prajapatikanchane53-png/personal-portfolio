@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanchan Prajapati | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="logo">Kanchan<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Kanchan Prajapati</h1>
+            <p class="hero-title" id="typed-text"></p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Hire Me</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/kanchan-prajapati" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:prajapatikanchane53@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919321854876"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="circle-bg"></div>
+            <div class="floating-card card1">📱 Flutter Dev</div>
+            <div class="floating-card card2">🤖 AI Enthusiast</div>
+            <div class="floating-card card3">🔥 Firebase</div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="section-header">
+            <h2>About <span>Me</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <div class="image-box">
+                    <p style="font-size:80px;">👩‍💻</p>
+                </div>
+            </div>
+            <div class="about-text">
+                <h3>B.Sc. IT Graduate | Flutter & Python Developer</h3>
+                <p>Energetic B.Sc. (IT) student with strong skills in Flutter, Python, and Firebase. Passionate about building innovative mobile applications, especially in the health and fitness domain. Known for excellent teamwork, debugging skills, and a strong interest in applying AI to sports tech solutions.</p>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span>🎓 Education:</span>
+                        <p>B.Sc. IT — Mumbai University (8.7 CGPI)</p>
+                    </div>
+                    <div class="info-item">
+                        <span>💼 Experience:</span>
+                        <p>Sports Tech Analyst @ HUDL</p>
+                    </div>
+                    <div class="info-item">
+                        <span>📍 Location:</span>
+                        <p>Mumbai, Maharashtra, India</p>
+                    </div>
+                    <div class="info-item">
+                        <span>📧 Email:</span>
+                        <p>prajapatikanchane53@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <span>💼 Status:</span>
+                        <p>Open to Work ✅</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary" style="margin-top:25px; display:inline-block;">Download CV 📄</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <div class="section-header">
+            <h2>My <span>Experience</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">June 2025 – December 2025</span>
+                    <h3>Sports Tech Analyst</h3>
+                    <h4>HUDL — Remote</h4>
+                    <ul>
+                        <li>Performed video breakdown and tagging of matches to identify key plays, tactics, and player performance.</li>
+                        <li>Used Hudl video analysis tools to code game events such as passes, shots, defensive actions, and tactical formations.</li>
+                        <li>Managed and organized large volumes of sports video data within the Hudl platform.</li>
+                        <li>Ensured high accuracy and quality control while processing match footage.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="section-header">
+            <h2>My <span>Skills</span></h2>
+            <div class="underline"></div>
+            <p style="color:#888; margin-top:10px;">Click on any skill to know more 👆</p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-card" onclick="openSkill('flutter')">
+                <div class="skill-icon">📱</div>
+                <h3>Flutter & Dart</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width:85%">85%</div></div>
+                <p class="click-hint">Click to explore →</p>
+            </div>
+            <div class="skill-card" onclick="openSkill('python')">
+                <div class="skill-icon">🐍</div>
+                <h3>Python</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width:80%">80%</div></div>
+                <p class="click-hint">Click to explore →</p>
+            </div>
+            <div class="skill-card" onclick="openSkill('firebase')">
+                <div class="skill-icon">🔥</div>
+                <h3>Firebase</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width:80%">80%</div></div>
+                <p class="click-hint">Click to explore →</p>
+            </div>
+            <div class="skill-card" onclick="openSkill('html')">
+                <div class="skill-icon">🌐</div>
+                <h3>HTML & CSS</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width:85%">85%</div></div>
+                <p class="click-hint">Click to explore →</p>
+            </div>
+            <div class="skill-card" onclick="openSkill('cpp')">
+                <div class="skill-icon">⚙️</div>
+                <h3>C / C++</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width:70%">70%</div></div>
+                <p class="click-hint">Click to explore →</p>
+            </div>
+            <div class="skill-card" onclick="openSkill('sql')">
+                <div class="skill-icon">🗄️</div>
+                <h3>SQL & MS-SQL</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width:75%">75%</div></div>
+                <p class="click-hint">Click to explore →</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILL MODAL -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeSkill()">
+        <div class="skill-modal" id="skill-modal" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeSkill()">✕</button>
+            <div class="modal-icon" id="modal-icon"></div>
+            <h2 id="modal-title"></h2>
+            <div class="modal-level" id="modal-level"></div>
+            <p id="modal-desc"></p>
+            <div class="modal-tags" id="modal-tags"></div>
+            <div class="modal-bar">
+                <div class="modal-fill" id="modal-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+<section id="projects">
+    <div class="section-header">
+        <h2>My <span>Projects</span></h2>
+        <div class="underline"></div>
+    </div>
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-icon">🧘</div>
+            <h3>Yoga Perfect</h3>
+            <span class="project-date">Aug 2024 – Feb 2025</span>
+            <p>A mobile yoga training application using Flutter with AI-based posture detection to identify yoga poses and provide real-time feedback. Firebase backend for data storage and user management.</p>
+            <div class="project-tags">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Firebase</span>
+                <span>AI/ML</span>
+            </div>
+            <div class="project-links">
+                <a href="#" class="btn-small">Live Demo</a>
+                <a href="#" class="btn-small outline">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-icon">💼</div>
+            <h3>Personal Portfolio</h3>
+            <span class="project-date">2025</span>
+            <p>My personal portfolio website showcasing my skills, experience, certifications and projects. Built with HTML, CSS and JavaScript with smooth animations and responsive design.</p>
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Responsive</span>
+            </div>
+            <div class="project-links">
+                <a href="#" class="btn-small">Live Demo</a>
+                <a href="#" class="btn-small outline">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-icon">☁️</div>
+            <h3>Weather App</h3>
+            <span class="project-date">2025</span>
+            <p>A real-time weather application that fetches live data using OpenWeatherMap API. Shows temperature, humidity, wind speed and weather conditions for any city worldwide.</p>
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>API</span>
+            </div>
+            <div class="project-links">
+                <a href="#" class="btn-small">Live Demo</a>
+                <a href="#" class="btn-small outline">GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-icon">🛒</div>
+            <h3>E-Commerce Page</h3>
+            <span class="project-date">2025</span>
+            <p>A responsive shopping page with product listing, search and filter functionality, and add to cart feature. Clean modern UI with smooth user experience across all devices.</p>
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Responsive</span>
+            </div>
+            <div class="project-links">
+                <a href="#" class="btn-small">Live Demo</a>
+                <a href="#" class="btn-small outline">GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+        <div class="section-header">
+            <h2>My <span>Education</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="edu-table-wrapper">
+            <table class="edu-table">
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>University / Board</th>
+                        <th>Year</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🎓 B.Sc. IT</td>
+                        <td>Mumbai University</td>
+                        <td>2022 – 2025</td>
+                        <td><span class="score">8.7 CGPI</span></td>
+                    </tr>
+                    <tr>
+                        <td>📘 HSC</td>
+                        <td>Maharashtra Board</td>
+                        <td>2020 – 2021</td>
+                        <td><span class="score">81.17%</span></td>
+                    </tr>
+                    <tr>
+                        <td>📗 SSC</td>
+                        <td>Maharashtra Board</td>
+                        <td>2018 – 2019</td>
+                        <td><span class="score">71%</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications">
+        <div class="section-header">
+            <h2>My <span>Certifications</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-icon">🛡️</div>
+                <h3>Cyber Security</h3>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🎨</div>
+                <h3>Graphic Design (Photoshop)</h3>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🤖</div>
+                <h3>RPA – Robotic Automation Anyware</h3>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🏫</div>
+                <h3>Student Faculty Exchange Program</h3>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">📋</div>
+                <h3>DLLE Activity</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="section-header">
+            <h2>Contact <span>Me</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Talk! 👋</h3>
+                <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>prajapatikanchane53@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 9321854876</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <p>linkedin.com/in/kanchan-prajapati</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Mumbai, Maharashtra, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" />
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" />
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" placeholder="Subject" />
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button class="btn btn-primary" onclick="sendMessage()">Send Message 🚀</button>
+                <p id="form-msg" style="margin-top:10px; color:#a855f7;"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Made with ❤️ by <span>Kanchan Prajapati</span></p>
+        <p style="margin-top:8px; font-size:13px;">© 2025 All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
